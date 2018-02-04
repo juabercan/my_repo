@@ -3,10 +3,14 @@
 	<head>
 		<title>Calculator</title>
 		<meta charset="utf-8">
-		<script type="text-javascript">
+		<script type="text/javascript">
 		  function cube() {
 		    var num = document.getElementById("n1");
 		    num.value = Math.pow(num.value, 3);
+		  }
+		  function cuadruple() {
+		    var num = document.getElementById("n1");
+		    num.value = Math.pow(num.value, 4);
 		  }
 		</script>
 	</head>
@@ -14,6 +18,7 @@
 		<h1>Calculadora de Juan Bernalte Cano</h1>
 	  	Number:
 	  	<input type="text" id="n1"><p>
-	  	<button onclick="cube()">x^3</button>
+	  	<button onclick="cube()">x<sup>3</sup></button>
+	  	<button onclick="cuadruple()">x<sup>4</sup></button>
 	</body>
 </html>
